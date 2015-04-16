@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Online Cusine</title>
+<link rel="stylesheet" href="css/reset.css" type="text/css"></link>
+<link rel="stylesheet" href="css/style.css" type="text/css"></link>
+<script src="js/jquery-1.9.1.js"></script>
+<script>
+$(document).ready(function() {
+var img_array =[ "assets/food1.jpg", "assets/food3.jpg" ,"assets/food4.jpg"];
+var i=-1;
+
+var interval=setInterval(function(){slide()},5000);
+function slide()
+{
+	i++;
+	$('#banner').fadeOut(500,function(){$('#banner').attr('src',img_array[i]);
+	if(i==2)
+	{
+		i=-1;
+	}
+	$('#banner').fadeIn(1000);})
+	$('#banner').attr('src','assets/buffer_img.jpg');
+}});
+</script>
+</head>
+<body>
+<!-- Outer Container Start -->
+<div class="outerContainer">
+	<!-- header Section Start-->
+	<header>
+		<div class="logo">
+			<h1>Online Cuisine</h1>
+		</div>
+		<!-- Navigation Menu Start-->
+		<nav>
+			<ul>
+				<li class="navSelected"><a href="#">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="pricelist.html">PriceList</a></li>
+				<li><a href="contact_us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<!-- Navigation Menu End -->
+	</header>
+	<!-- Header Section End -->
+</div>
+	<!-- Main Content Start -->
+	<section class="slider"><!-- start of slider-->
+	<section class="slider_content"><img src="assets/food4.jpg" id="banner" alt="banner" class="banner"></section>
+	</section><!-- end of slider -->
+
+	<div class="clear"></div>
+	<section class="main_body"><!-- start of main_body-->
+	<article class="main_content"><!-- start of main content-->
+
+	<!-- *********************************** box1 ***********************************-->
+	<article class="box1 box1_bg">
+	<p class="offer_heading">Our Top Menu</p>
+	<span class="offer_text">
+	Purchase a gift which 
+	can be presented at any of 
+	our locations
+	</span>
+	<p><a href="pricelist.html" class="order_button">Order</a></p>
+	</article>
+          <!-- ***********************************box2*********************************** -->
+	<article class="box1 box_margin box2_bg">
+	<p class="offer_heading">Offer Of The Day</p>
+	<span class="offer_text">
+	Purchase a gift which 
+	can be presented at any of 
+	our locations
+	</span>
+	<p><a href="pricelist.html" class="order_button">Order</a></p>
+	</article>
+
+           <!--*********************************** box3 ***********************************-->
+	<article class="box1 box_margin box3_bg" style="margin-right:0px;">
+	<p class="offer_heading">Catering</p>
+	<span class="offer_text">
+	Purchase a gift which 
+	can be presented at any of 
+	our locations
+	</span>
+	<p><a href="pricelist.html" class="order_button">Order</a></p>
+	</article>
+	<!-- end of all box -->
+	<div class="clear"></div>
+	
+	<!-- start of popular food--->
+	<section class="popular_food_content">
+	<h1 class="popular_food">Popular Food Items</h1>
+	<!-- start of list of popular food -->
+	<ul>
+	<!-- ***********************************first popular food ***********************************-->
+	<li><img src="assets/pop_food1.jpg"/>
+	<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+	<p class='p_center'><a href="pricelist.html" class="order_button" >Order now</a></p>
+	</li>
+	<!-- ***********************************second popular food ***********************************-->
+	<li><img src="assets/pop_food2.jpg"/>
+	<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+	<p class='p_center'><a href="pricelist.html" class="order_button">Order now</a></p></li>
+	<!--*********************************** third popular food ***********************************-->
+	<li><img src="assets/pop_food3.jpg"/>
+	<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+	<p class='p_center'><a href="pricelist.html" class="order_button">Order now</a></p></li>
+	<!--*********************************** fourth popular food ***********************************-->
+	<li><img src="assets/pop_food4.jpg"/>
+	<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+	<p class='p_center'><a href="pricelist.html" class="order_button">Order now</a></p></li>
+	</ul>
+
+
+	</article>
+	</article><!-- end of main_content-->
+
+
+	</section><!-- end of main body-->
+	<!-- Main Content End -->
+<div class="outerContainer">
+	<!-- Footer Section Start -->
+	<footer>
+		<div id="footerContainer">
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">PriceList</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</nav>
+			<p> Copyright @ 2013 	Privacy Policy
+			</p>
+		</div>
+	</footer>
+	<!-- Footer Section End -->
+</div>
+<!-- Outer Container End -->
+</body>
+</html>

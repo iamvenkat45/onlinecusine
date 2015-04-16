@@ -1,0 +1,191 @@
+<html>
+<head>
+<title>Online Cusine</title>
+<script src="js/jquery-1.9.1.js"></script>
+<link rel="stylesheet" href="css/reset.css" type="text/css"></link>
+<link rel="stylesheet" href="css/style.css" type="text/css"></link>
+
+<script type="text/javascript">
+$(document).ready(function() {
+                $('.inner').hide();//to hide all the content div at beginning
+                $('.inner-1').click(function()
+                {              
+                                $('.inner').not(($(this).next())).slideUp();
+                                $(this).next('.inner').slideToggle();
+                  //get the inner div which is next to h1 which is next to img(currnet clicked element)                                                      
+                });
+});
+</script>
+
+</head>
+<body>
+<!-- Outer Container Start -->
+<div class="outerContainer">
+	<!-- header Section Start-->
+	<header>
+		<div class="logo">
+			<h1>Online Cuisine</h1>
+		</div>
+		<!-- Navigation Menu Start-->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="pricelist.html">PriceList</a></li>
+				<li><a href="contact_us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<!-- Navigation Menu End -->
+	</header>
+	<!-- Header Section End -->
+</div>
+
+<div id="foodListContainer"><!-- start of main_body-->
+<!--leftpanel starts here-->	
+<div class="leftpanel">
+
+<div class="inner-block">
+<h2 class="padd">Look Through <span>Our Menu</span></h2>
+<div class="height"></div>
+
+<div class="box-2" class="bg">
+<div class="inner-1">
+<a href="#">Seafood <span>Festival</span></a><br>
+<strong>Available for a limited time</strong></div>
+<div class="inner" class="bg" id="bg-1">
+<p>Seafood is any form of sea life regarded as food by humans. Seafood prominently includes fish and shellfish. Shellfish include various species of molluscs, crustaceans, and echinoderms. Historically, sea mammals such as whales and dolphins have been consumed as food, though that happens to a lesser extent these days.</p>
+    <ul class="acc-item">
+    <li>Seafood Menu</li>
+    <li>Seafood Pasta</li>
+    <li>Scallop & Shrimp Combo</li>
+    <li>Alaskan Halibut Fish & Chips</li>
+    <li>Seafood Stir Fry</li>
+    <li>Seafood Caesar Salad</li>
+    </ul>
+     
+</div>
+</div>
+
+
+<div class="box-2" >
+<div class="inner-1">
+<a href="#">Brunch<span>Fresh Salads </span></a><br>
+<strong>Available for a limited time</strong>
+</div>
+<div class="inner" id="bg-2">
+<p>Salad is a popular, ready-to-eat dish made of heterogeneous ingredients in a wet or once-wet base, usually served chilled or at a moderate temperature. </p>
+    <ul class="acc-item">
+    <li>Fresh Salads Menu</li>
+    <li>Southwest Blackened Chicken</li>
+    <li>Caesar</li>
+    <li>Cayenne Shrimp</li>
+    <li>Tuna Salad</li>
+    <li>Strawberry Spinach</li>
+    </ul>
+   
+</div>
+</div>
+
+<div class="box-2" >
+<div class="inner-1">
+<a href="#">Appetizers <span>Fresh Deserts</span></a><br>
+<strong>Start your meal with a bang</strong></div>
+<div class="inner" id="bg-3">
+<p>Salad is a popular, ready-to-eat dish made of heterogeneous ingredients in a wet or once-wet base, usually served chilled or at a moderate temperature. </p>
+    <ul class="acc-item">
+    <li>Fresh Salads Menu</li>
+    <li>Southwest Blackened Chicken</li>
+    <li>Caesar</li>
+    <li>Cayenne Shrimp</li>
+    <li>Tuna Salad</li>
+    <li>Strawberry Spinach</li>
+    </ul>
+</div>
+</div>
+
+<div class="box-2" >
+<div class="inner-1">
+<a href="#">Lunch <span>Combo</span></a><br>
+<strong>Available for a limited time</strong>
+</div>
+<div class="inner" id="bg-4">
+ <p>Lunch, an abbreviation of luncheon, is a midday meal,[1] and is generally smaller than dinner, which is the main meal of the day whenever dinner is eaten</p>
+    <ul class="acc-item">
+    <li>Lunch Menu</li>
+    <li>Onion Soup </li>
+    <li>Caviar Tasting </li>
+    <li>Grilled Asparagus and Mushroom Salad </li>
+    <li>Tuna Nicoise </li>
+    <li>Kobe Burger </li>
+    </ul>
+    
+</div>
+</div>
+</div>
+
+</div>
+<!--leftpanel end here-->
+<!--rightpanel starts here-->
+<div class="rightpanel">
+
+<div class="inner-block"> <h2 class="padd">weekday <span>specials</span></h2>
+<div class="height"></div>
+<p class="top bot-1">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+Fusce euismod consequat ante. </p>
+
+<div class="block-4">
+<div class="inner-2">
+<span>New fresh salads</span>
+<strong>ideas</strong>
+<div class="fright">
+<a href="#">more<em><br></em> special<br> propositions</a></div>
+
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="block-4 top-4">
+
+<div class="inner-3">
+<span>Fresh fruits </span>
+<strong>in ice</strong>
+
+<div class="fright">
+<a href="#">view more</a></div>
+
+<div class="clear"></div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="clear"></div>
+
+     
+	</div>
+    <!-- end of main body-->
+ 
+<div class="outerContainer">
+	<!-- Footer Section Start -->
+	<footer>
+		<div id="footerContainer">
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">PriceList</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</nav>
+			<p> Copyright @ 2013 	Privacy Policy
+			</p>
+		</div>
+	</footer>
+	<!-- Footer Section End -->
+</div>
+<!-- Outer Container End -->
+
+</body>
+</html>
